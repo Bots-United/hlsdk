@@ -70,12 +70,6 @@ typedef int BOOL;
 #include <limits.h>
 #include <stdarg.h>
 #include <string.h> // memset 
-#ifndef min
-#define min(a,b)  (((a) < (b)) ? (a) : (b))
-#endif
-#ifndef max
-#define max(a,b)  (((a) > (b)) ? (a) : (b))
-#endif
 #ifndef _vsnprintf
 #define _vsnprintf(a,b,c,d) vsnprintf(a,b,c,d)
 #endif
@@ -85,6 +79,12 @@ typedef int BOOL;
 #include "stdio.h"
 #include "stdlib.h"
 #include "math.h"
+#ifndef min
+#define min(a,b)  (((a) < (b)) ? (a) : (b))
+#endif
+#ifndef max
+#define max(a,b)  (((a) > (b)) ? (a) : (b))
+#endif
 
 // Header file containing definition of globalvars_t and entvars_t
 typedef unsigned int func_t;					//
